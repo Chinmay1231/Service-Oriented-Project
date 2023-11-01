@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "94523b40-39d4-4366-9778-a2e798f405c0",
+		"name": "Product Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30512103"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/product/productDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/product/productList"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/product/createproduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product_id\":1004,\r\n    \"name\":\"Demasa\",\r\n    \"description\":\"ToothPaste\",\r\n    \"price\":100,\r\n    \"quantity_available\":10,\r\n    \"category_id\":9019\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/product/createproduct"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/category/createCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category_id\":9019,\r\n    \"name\":\"Food Items\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:5000/category/createCategory"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/category/categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:5000/category/categories"
+			},
+			"response": []
+		}
+	]
+}
